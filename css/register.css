@@ -1,0 +1,365 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.headerlogo{
+	width: 220px;
+	height: 35px;
+}
+.header{
+	line-height: 60px;
+	width:1014px;
+	display: flex;
+	justify-content: space-between;
+	margin:0 auto;
+}
+.lefthead{
+	    width: 222px;
+	    height: 35px;
+}
+.lefthead img{
+	margin: 15px 0;
+}
+.righthead{	
+	display: flex;
+}
+.shuxian{
+	display: inline-block;
+	padding:0px 15px 0px 8px;
+	color:gainsboro;
+}
+.fa{
+	padding:0 5px;
+}
+.show{
+	position: relative;
+}
+.qrcode_app{
+    position: absolute;
+    display: none;
+    right: 20px;
+    top: 45px;
+    width: 128px;
+    height: 128px;
+    padding: 11px;
+    z-index: 6;
+    box-shadow: 0 0 5px hsla(0,0%,80%,.6);
+    background-color: #fff;
+}
+.righthead>a{
+	text-decoration: none;
+	font-size: 14px;
+    color:#999999;
+}
+.middle{
+	position: relative;
+	height: 695px;
+	width: 100%;	
+    background: #00b38a url(//www.lgstatic.com/lg-landingpage-fed/pc/images/bg_49338802.png) bottom no-repeat;
+    background-size: auto 110px;
+}
+.juzhong{
+	box-sizing: border-box;
+	position: absolute;
+	display:flex;
+	left:50%;
+	transform: translate(-50%);
+}
+.middle-slogo{
+	margin:0 auto;
+	background-color:#00b38a;
+    padding: 28px 0 8px;
+    height: 34px;
+    width:1010px;
+}
+.middle-slogo img{
+	width: 234px;
+	height: 34px;
+}
+.leftmiddle{
+	width: 610px;
+	height:480px;
+	box-sizing: border-box;
+	margin-right: 20px;
+}
+.search input{
+	box-sizing: border-box;
+	font-size: 14px;
+    color: #666;
+    width: 608px;
+    padding-left: 49px;
+    flex: 1;
+    line-height: 46px;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+}
+.search{
+	border-radius: 2px;
+	height: 46px;
+	background: white;
+	position: relative;
+}
+.glass{
+	display: inline-block;	
+	position: absolute;
+    margin: 15px 11px 5px 22px;
+	background: url(../img/sprites.png) no-repeat;
+	background-position:-82px 0px;
+	background-size:200px 200px;
+	width: 18px;
+	height: 16px;
+}
+.search button{
+	position: absolute;
+	top:5px;
+	right:5px;
+	font-size: 16px;
+    color: #fff;
+    background: #00b38a;
+    border-radius: 2px;
+    border:none;
+    padding: 7px 25px;
+    outline: none;
+}
+.middle .fenlei{	
+	height: 415px;
+	width: 110px;
+}
+.middle .fenlei ul{
+	
+	margin-top:8px;
+	padding: 7px 7px 0px 7px;
+	border-radius: 4px;
+	background: #00906f;
+}
+.middle .fenlei li{
+    list-style: none;
+	width: 100px;
+	height: 67px;
+	line-height: 67px;
+	text-align: center;
+	color:white;
+	font-size: 16px;
+}
+.active{
+    border-radius: 4px;
+    color: #007d61;
+    background-color: #7fc8b7;
+}
+.fenlei{
+	width: 610px !important;
+	display: flex;
+}
+.rightfenlei{
+	box-sizing: border-box;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 3px 0px 0px 10px;
+}
+.rightfenlei img{
+	border-radius: 4px;
+}
+.rightmiddle{
+	margin-left: 20px;
+	width: 360px;
+	height: 460px;
+	padding: 57px 50px 35px;
+    float: right;
+    background: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    animation: name1 0.5s 0s ease alternate;
+}
+@keyframes name1{
+	15%{
+		transform:rotate(-3deg);
+	}
+	30%{
+		transform:rotate(3deg);
+	}
+	45%{
+		transform:rotate(-3deg);
+	}
+	60%{
+		transform: rotate(3deg);
+	}
+	75%{
+		transform: rotate(-3deg);
+	}
+	90%{
+		transform: rotate(3deg);
+	}
+	
+}
+.mid-title{
+	font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 47px;
+}
+.green{
+	    color: #00b38a;
+}
+.getcode{
+	position: absolute;
+    right: 0;
+    top: 75px;
+    display: inline-block;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    color: #00b38a;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.rightmiddle .diyige input{
+	font-weight: lighter;
+    width: 100%;
+    height: 38px;
+   text-align: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: .5px solid #e6e6e6;
+    outline: none;
+}
+.dierge input{
+	margin-top: 40px;
+	font-weight: lighter;
+	width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: .5px solid #e6e6e6;
+    outline: none;
+}
+.form-right{
+	position: relative;
+}
+.updowm{
+	font-size: 15px;
+	color:#122B40;
+	font-weight:400;
+	position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 2;
+    width: 50px;
+    height: 38px;
+    padding-right: 22px
+}
+ .updowm:after{
+ 	position: absolute;
+ 	top:4px;
+ 	left:50px;
+ 	content: "";
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:url(../img/sprites.png) no-repeat;
+    background-size:150px 150px;
+    background-position:-136px -9px;
+    z-index:2;
+}
+.zhuce{
+	margin-top: 40px;
+	display: block;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #02b389;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.xieyi{
+	text-align: center;
+	font-size: 14px;
+    color: #999;
+}
+.xieyi>a{
+	font-size: 14px;
+    color: #00b38a;
+    text-decoration:none;
+}
+.yiyouzhanhao{
+	text-align: center;
+    margin-top: 44px;
+}
+ .yiyouzhanhao>a{
+ 	font-size: 14px;
+    color: #00b38a;
+    text-decoration: underline;
+ } 
+  .footerlist img{
+  	    margin: 0px 8px 0px;
+  	    width: 43px;
+  	    height: 43px;
+  }
+ .footerlist{
+ 	padding-bottom:40px;
+ 	margin:0 auto;
+ 	width:1014px;
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+.footerlist li{
+	display: flex;
+	list-style: none;
+}
+.foottitle{
+	font-size: 18px;
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+}
+.footcontent{
+	font-weight:400;
+	font-size: 13px;
+    color: #666;
+    height: 32px;
+    line-height: 32px;
+}
+.footer{
+     padding-top: 50px;
+     padding-bottom: 30px;
+}
+.footbottom img{
+	width: 175px;
+	height: 18px;
+}
+.footbottom-info{
+	margin:0 auto;
+	color: #999;
+	font-size: 12px;
+	width: 1014px;
+	text-align: center;
+	line-height: 22px;
+}
+.footimg{
+	height: 26px;
+	padding-top:25px;
+	width: 1014px;
+	border-top: 0.6px solid #d5dadf;
+	margin:0 auto;
+	text-align: center;
+}
+.footerline{
+	display: inline-block;
+    width: 1px;
+    height:10px;
+    margin:0 5px;
+    background: #ccc;
+    overflow: hidden;
+}
+

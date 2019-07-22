@@ -1,0 +1,448 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  position: relative;
+  height: 200px;
+}
+.box .basic {
+  padding: 50px;
+  background: #FAFAFA;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #e3ebe9;
+  display: flex;
+  width: 540px;
+  margin-left: 12%;
+  margin-top: 40px;
+}
+.box .basic .basic-photo {
+  height: 88px;
+  width: 88px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.box .basic .basic-photo img {
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+}
+.box .basic .basic-photo .basic-photo_shadow {
+  display: none;
+}
+.box .basic .basic-info {
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  flex: 1;
+}
+.box .basic .basic-info .edit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 37px;
+  color: #00B38A;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+}
+.box .basic .basic-info em,
+.box .basic .basic-info i {
+  font-style: normal;
+}
+.box .basic .basic-info em .icon-icon_resume_editor:before {
+  content: "\e901";
+}
+.box .basic .basic-info .basic-name-area {
+  overflow: hidden;
+  height: 37px;
+  margin-bottom: 11px;
+}
+.box .basic .basic-info .basic-name {
+  float: left;
+  max-width: 250px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.box .basic .basic-info p {
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  margin-top: 6px;
+}
+.box .basic .basic-info .icon-sex.icon-sex__male {
+  background-position: -54px -117px;
+}
+.box .basic .basic-info .icon-sex {
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin-top: 16px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../img/简历11.png);
+}
+.box .basic .basic-info .basic-self {
+  margin-top: 20px;
+}
+.box .detail {
+  width: 640px;
+  border: 1px solid #e3ebe9;
+  margin-left: 12%;
+  border-top: none ;
+}
+.box .mr-template {
+  padding: 50px 50px 10px;
+  width: 640px;
+}
+.box .mr-template .mr-template_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.box .mr-template .mr-template_title span {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  margin-left: 10px;
+}
+.box .mr-template .mr-template_title span:before {
+  content: '';
+  display: block;
+  border-left: 3px solid #00B38A;
+  height: 16px;
+  width: 3px;
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box .mr-template .tagboard {
+  position: relative;
+}
+.box .mr-template .tagboard .editor-tool {
+  bottom: 9px;
+  top: auto;
+  background: #fff;
+  justify-content: flex-end;
+  width: 50px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  z-index: 1;
+  padding: 2px 3px;
+}
+.box .mr-template .tagboard .integrative-tag_content .tagboard-tag {
+  border: 1px solid #949494 ;
+  padding: 5px;
+  border-radius: 20px ;
+  color: #999;
+  font-size: 12px;
+}
+.box .mr-template .per-self_content {
+  position: relative;
+  padding: 5px 0;
+}
+.box .mr-template .per-self_content .per-self_des {
+  margin-top: 13px;
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}
+.box .mr-template .per-self_content .editor-tool {
+  bottom: 9px;
+  top: auto;
+  background: #fff;
+  justify-content: flex-end;
+  width: 50px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  z-index: 1;
+  padding: 2px 3px;
+}
+.box .mr-templateedu-exp {
+  padding: 50px 50px 10px;
+  width: 540px;
+}
+.box .mr-templateedu-exp .mr-template_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.box .mr-templateedu-exp .mr-template_title span {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  margin-left: 10px;
+}
+.box .mr-templateedu-exp .mr-template_title span:before {
+  content: '';
+  display: block;
+  border-left: 3px solid #00B38A;
+  height: 16px;
+  width: 3px;
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box .mr-templateedu-exp .mr-template_title .add-btn {
+  color: #00B38A;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+}
+.box .mr-templateedu-exp .edu-exp_group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list {
+  position: relative;
+  margin-bottom: 30px;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list .edit-btn {
+  display: none;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list .edit-btn .icon-icon_resume_editor {
+  margin-right: 6px;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list .exp-list_time {
+  font-size: 14px;
+  color: #666;
+  position: absolute;
+  right: 0;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list .exp-list_top {
+  display: flex;
+  align-items: center;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list .exp-list_top img {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+}
+.box .mr-templateedu-exp .edu-exp_group .edu-exp_list .exp-list_top .exp-list_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 46px;
+  justify-content: space-between;
+}
+.box .mr_bottom {
+  width: 620px;
+  height: 20px;
+  margin-left: 180px;
+  position: relative;
+  margin-top: 5px;
+  color: #c5c5c5;
+}
+.box .mr_bottom .mr_down {
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+.box .mr_bottom .mr_down i {
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background: url(../img/简历2.png) -90px -140px no-repeat;
+}
+.box .mr_bottom .mr_bottom_r {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.box .mr-myresume-right {
+  position: absolute;
+  right: 220px;
+  top: 0;
+  width: 280px;
+}
+.box .mr-myresume-right .job-objective {
+  width: 280px;
+  padding: 20px 20px 15px;
+  border: 1px solid #F2F2F2;
+  border-radius: 1px;
+  margin-bottom: 20px;
+}
+.box .mr-myresume-right .job-objective .job-objective__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+.box .mr-myresume-right .job-objective .job-objective__title p {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.box .mr-myresume-right .job-objective .job-objective__title .edit-btn {
+  color: #00B38A;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+}
+.box .mr-myresume-right .job-objective .job-objective__list {
+  color: #666;
+  font-size: 14px;
+  padding: 0 0 0 10px;
+}
+.box .mr-myresume-right .job-objective .job-objective__list li {
+  margin-bottom: 15px;
+  display: flex;
+}
+.box .mr-myresume-right .job-objective .job-objective__list li i {
+  margin-right: 6px;
+  background-position: -102px -106px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../img/简历1.png);
+  background-repeat: no-repeat;
+  background-size: 128px 256px;
+}
+.box .mr-myresume-right .job-objective .job-objective__list .job-objective__name i {
+  background-position: -10px -170px;
+}
+.box .mr-myresume-right .job-objective .job-objective__list .job-objective__type i {
+  background-position: -10px -110px;
+}
+.box .mr-myresume-right .job-objective .job-objective__list .job-objective__city i {
+  margin-right: 6px;
+  background-position: -102px -106px;
+}
+.box .mr-myresume-right .job-objective .job-objective__list .job-objective__salary i {
+  background-position: -10px -140px;
+}
+.box .mr-myresume-right .job-objective .job-objective__list .job-objective__info i {
+  background-position: -10px -200px;
+}
+.box .mr-myresume-right .annex {
+  width: 320px;
+  border: 1px solid #F2F2F2;
+  border-radius: 1px;
+  margin-right: 180px;
+  display: block;
+  text-align: center;
+  line-height: 79px;
+  font-size: 14px;
+  color: #666;
+}
+.box .mr-myresume-right .right-nav__integrity {
+  padding: 16px 16px 18px;
+  border: 1px solid #f2f2f2;
+  background-color: #fafafa;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  width: 288px;
+  margin-top: 20px;
+}
+.box .mr-myresume-right .right-nav__integrity .mr_top {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.box .mr-myresume-right .right-nav__integrity .mr_top .active-color {
+  color: #00B38A;
+}
+.box .mr-myresume-right .right-nav__integrity .mr_top a {
+  color: #555;
+  background-color: transparent;
+  text-decoration: none;
+}
+.box .mr-myresume-right .right-nav__integrity .mr_integrity_m {
+  position: relative;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+.box .mr-myresume-right .message {
+  border: 1px solid #f2f2f2;
+  background-color: #fafafa;
+  border-radius: 3px;
+  width: 320px;
+  margin-top: 20px;
+}
+.box .mr-myresume-right .message .right-nav__content .active {
+  color: #00b88d;
+  border-color: #00b88d;
+  border-width: 3px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  height: 50px;
+  border-left: 3px solid transparent;
+  line-height: 50px;
+  margin-left: -1.5px;
+  position: relative;
+  cursor: pointer;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/简历2.png) no-repeat;
+  margin: 0 15px 0 31px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_base_i {
+  background-position: -5px -117px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_self_i {
+  background-position: -67px -262px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_works_i {
+  background-position: -24px -137px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_project_i {
+  background-position: -67px -177px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_edu_i {
+  background-position: -24px -156px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_social_account_i {
+  background: url(../img/简历222.png) no-repeat;
+  background-position: -5px -5px;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .mr_portfolio_account_i {
+  background: url(../img/简历22.png) no-repeat;
+  background-size: contain;
+}
+.box .mr-myresume-right .message .right-nav__content .right-nav__item .editor-tool {
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  right: 20px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  z-index: 1;
+  padding: 2px 3px;
+}
