@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		    <!--导航条-->
+			<nav class="public-nav">
+				<a href="index.html" class="company"><span class="company-logo"></span></a>
+				<span class="address">全国站</span><a href="#" class="city">[切换城市]</a>
+				<ul>
+					<a href="index.html"><li class="li-1">首页</li></a>
+					<a href="job.html"><li>公司</li></a>
+					<a href="#"><li>校园</li></a>
+					<a href="#"><li>言职</li></a>
+				</ul>
+				<div href="#" class="register">
+					<span class="register-log"></span>
+					<a href="login.html">登录</a>
+					<a href="#">|</a>
+					<a href="register.html">注册</a>
+				</div>
+				<a href="index.html" class="app"><span class="app-log"></span>拉勾APP</a>
+				<a href="#" class="version">进入企业版</a>
+			</nav>
+			<div class="logo">
+				<img class="logoimg" src="https://www.lgstatic.com/i/image2/M01/22/3C/CgoB5ly_5LeABgLIAADWGM9TJQU214.PNG" />
+				<div class="login-from">
+					<div class="from-tel">
+						<input type="text" placeholder="输入手机号"/>
+					</div>
+					<div class="from-yzm">
+						<input type="text" placeholder="验证码"/>
+						<div class="yz-btn">获取</div>
+					</div>
+					<div class="login-btn">
+						登录/注册
+					</div>
+				</div>
+			</div>
+			<section class="section">
+				<div class="searchwork">
+					<form action="" method="post">
+						<input type="text" placeholder="搜索职位、公司或地点" />
+						<button class="search-btn">搜索</button>
+					</form>
+					<div class="list">
+						<span>热门搜索：</span>
+						<a href="#">有赞</a>
+						<a href="#">java面试</a>
+						<a href="#">架构设计</a>
+						<a href="#">数量分析</a>
+						<a href="#">php</a>
+						<a href="#">C++</a></a>
+					</div>
+				</div>
+				
+				<div class="container">
+					<div class="sidebar">
+						<div class="menu-box">
+							<h2>技术</h2>
+							<a href="#">java</a>
+							<a href="#">PHP</a>
+							<a href="#">C++</a>
+							<a href="#">区块链</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>产品</h2>
+							<a href="#">产品总监</a>
+							<a href="#">产品经理</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>设计</h2>
+							<a href="#">UI设计师</a>
+							<a href="#">交互设计</a>
+							<a href="#">网页设计师</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>运营</h2>
+							<a href="#">新媒体运营</a>
+							<a href="#">编辑</a>
+							<a href="#">数据运营</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>市场</h2>
+							<a href="#">市场营销</a>
+							<a href="#">市场推广</a>
+							<a href="#">市场策划</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>销售</h2>
+							<a href="#">销售专业</a>
+							<a href="#">销售经理</a>
+							<a href="#">销售总监</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>职能</h2>
+							<a href="#">HR</a>
+							<a href="#">行政</a>
+							<a href="#">财务</a>
+							<a href="#">审计</a>
+							<i class="icon"></i>
+						</div>
+						<div class="menu-box">
+							<h2>游戏</h2>
+							<a href="#">小游戏开发</a>
+							<a href="#">U3D</a>
+							<a href="#">游戏策划</a>
+							<i class="icon"></i>
+						</div>
+					</div>
+					<div class="focus">
+						<ul class="silde">
+							<li><img src="https://www.lgstatic.com/i/image2/M01/4E/05/CgoB5l0MvIWAdkYuAAFh9GKgkMQ996.JPG"/></li>
+							<li><img src="https://www.lgstatic.com/i/image2/M01/53/C2/CgotOV0VlFSAFVKJAAESrNReXp0696.JPG"/></li>
+							<li><img src="https://www.lgstatic.com/i/image2/M01/51/7E/CgoB5l0S2NOAQGP5AAGDoZCWy_A423.JPG"/></li>
+							<li><img src="https://www.lgstatic.com/i/image2/M01/4E/05/CgoB5l0MvIWAdkYuAAFh9GKgkMQ996.JPG"/></li>
+							<li><img src="https://www.lgstatic.com/i/image2/M01/53/C2/CgotOV0VlFSAFVKJAAESrNReXp0696.JPG"/></li>
+						</ul>
+						<ul class="list">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				
+				<ul class="jobTab">
+					<li class="active">24Hour热门</li>
+					<li>最新职位</li>
+				</ul>
+				<div class="jobList">
+					<div class="hot_tips">
+		                <span class="icon"><i>?</i></span>
+		                <div>过去24小时，最多人看过的岗位在这里</div>
+		                <span class="know">我知道了</span>
+		            </div>
+		            <ul class="items">
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            	<li class="itemsli">
+		            		<div class="itemt">
+		            			<p>
+		            				<span>智能硬件产品经理</span>
+		            				<em>[16:35发布]</em>
+		            				<i></i>
+		            				<strong>10K-16K</strong>
+		            			</p>
+		            			<p class="jy">经验3-5年/不限</p>
+		            			<a>智能硬件</a>
+		            		</div>
+		            		<div class="itemb">
+		            			<img src="//www.lgstatic.com/thumbnail_100x100/i/image3/M00/50/61/CgpOIFr45iCAXPuLAADisihfDmU180.jpg" />
+		            			<div>
+		            				<p>超盟金服</p>
+		            				<span>移动互联网/A轮/深圳</span>
+		            			</div>
+		            		</div>
+		            	</li>
+		            </ul>
+		            <a href="job.html" class="list-more">查看更多</a>
+				</div>
+				
+				<ul class="module-tabs">
+				    <li class="current">互联网热门公司榜</li>
+				</ul>
+				<div class="company">
+					<div class="hot_tips">
+		                <span class="icon"><i>?</i></span>
+		                <div>互联网行业实力热门企业</div>
+		                <span class="know">我知道了</span>
+		            </div>
+		            <ul class="company-list">
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            	<li>
+		            		<div class="companyt">
+		            			<img src="//www.lgstatic.com/thumbnail_160x160/image1/M00/00/47/Cgo8PFTUXOOABWKnAAC8bZIppJo836.jpg" />
+		            			<h3>时间财富网</h3>
+		            			<span>电商,消费生活/未融资</span>
+		            			<p>时间财富网，让天下没有难寻的创意！</p>
+		            		</div>
+		            		<div class="companyb">
+		            			<a href="#">
+		            				<p class="green">4</p>
+		            				<p class="gray">面试评价</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">5</p>
+		            				<p class="gray">在招职位</p>
+		            			</a>
+		            			<a href="#">
+		            				<p class="green">100%</p>
+		            				<p class="gray">简历处理率</p>
+		            			</a>
+		            		</div>
+		            	</li>
+		            </ul>
+		            <a href="company.html" class="list-more">查看更多</a>
+				</div>
+				
+				<ul class="module-tabs">
+				    <li class="current">友情链接</li>
+				</ul>
+				<dl>
+					<dd>
+						<a href="#">拉勾网</a>
+						<a href="#">教师网</a>
+						<a href="#">招聘</a>
+						<a href="#">app下载</a>
+						<a href="#">java课</a>
+						<a href="#">架构课</a>
+						<a href="#">中大网校</a>
+						<a href="#">教师招聘</a>
+						<a href="#">人人都是产品经理</a>
+						<a href="#">新疆人才网</a>
+						<a href="#">研究报告</a>
+						<a href="#">互联网的一些事</a>
+						<a href="#">人才招聘</a>
+						<div>
+							<a href="#">教师网</a>
+							<a href="#">招聘</a>
+							<a href="#">app下载</a>
+							<a href="#">java课</a>
+							<a href="#">架构课</a>
+							<a href="#">中大网校</a>
+							<a href="#">教师招聘</a>
+							<a href="#">人人都是产品经理</a>
+							<a href="#">新疆人才网</a>
+							<a href="#">研究报告</a>
+							<a href="#">互联网的一些事</a>
+							<a href="#">人才招聘</a>
+							<a href="#">拉勾网</a>
+							<a href="#">教师网</a>
+							<a href="#">招聘</a>
+							<a href="#">app下载</a>
+							<a href="#">java课</a>
+							<a href="#">架构课</a>
+							<a href="#">中大网校</a>
+							<a href="#">教师招聘</a>
+							<a href="#">人人都是产品经理</a>
+							<a href="#">新疆人才网</a>
+							<a href="#">研究报告</a>
+							<a href="#">互联网的一些事</a>
+							<a href="#">人才招聘</a>
+							<a href="#">教师网</a>
+							<a href="#">招聘</a>
+							<a href="#">app下载</a>
+							<a href="#">java课</a>
+							<a href="#">架构课</a>
+							<a href="#">中大网校</a>
+							<a href="#">教师招聘</a>
+							<a href="#">人人都是产品经理</a>
+							<a href="#">新疆人才网</a>
+							<a href="#">研究报告</a>
+							<a href="#">互联网的一些事</a>
+							<a href="#">人才招聘</a>
+							<a href="#">教师网</a>
+							<a href="#">招聘</a>
+							<a href="#">app下载</a>
+							<a href="#">java课</a>
+							<a href="#">架构课</a>
+							<a href="#">中大网校</a>
+							<a href="#">教师招聘</a>
+							<a href="#">人人都是产品经理</a>
+							<a href="#">新疆人才网</a>
+							<a href="#">研究报告</a>
+							<a href="#">互联网的一些事</a>
+							<a href="#">人才招聘</a>
+							<a href="#" class="more">更多</a>
+						</div>
+					</dd>
+					<span class="expansion">展开<i></i></span>
+				</dl>
+			</section>
+			
+			<a id="backtop" title="回到顶部" rel="nofollow"></a>
+			<!--底部-->
+			<footer class="public-footer">
+				<div class="inner_wrapper">
+					<div class="footer_module_column">
+		                <a class="footer_app" href="#" > <i class="footer_app_icon"></i>下载拉勾APP </a>
+		                <a class="footer_mina" href="javascript:;" ><i class="footer_mina_icon"></i> 微信小程序</a>
+		                <div class="footer_module_item">		       
+		                    <a class="footer_wechat" href="#"><i class="footer_wechat_icon"></i> 拉勾微信 </a>
+		                    <a class="footer_webo" href="#"><i class="footer_webo_icon"></i>拉勾微博</a>                            
+		                </div>
+		            </div>
+				
+				<div class="footer_module_right">
+		                <div class="footer_module_business">
+		                    <p class="footer_module_title">企业服务</p>
+		                    <a href="#">招聘抢人宝典</a>
+		                    <a href="#">公司搜索</a>
+		                    <a href="#">拉勾APP</a>
+		                </div>
+		                <div class="footer_module_business">
+		                    <p class="footer_module_title">用户帮助</p>
+		                    <a href="#">帮助中心</a>
+		                    <a href="#">用户服务协议</a>
+		                    <a href="#">隐私政策</a>
+		                    <a href="#">在线提问</a>
+		                </div>
+		                <div class="footer_module_business">
+		                    <p class="footer_module_title">联系方式</p>
+		                    <span class="tel">服务热线：4006 2828 35 (9:00 -18:00)</span> 
+		                    <a class="tel-2" href="#">企业服务邮箱：cc@lagou.com</span> 
+		                    <a href="#" target="_blank">联系我们</a>
+		                </div> 
+                </div>
+                </div>
+                
+                <div class="copyright">
+		            <div class="copyright_main">
+		                <div class="copyright_main_left">
+		                    <span class="copyright_title"><em>&copy;</em>2018 拉勾网</span>
+		                    <a target="_blank">京ICP备14023790号-2</a>
+		                    <a target="_blank" class="footer_gongan"><span class="footer_lagou_gongan"></span>京公网安备 11010802024043号</a>
+		                    <div class="footer_lagou_jubao">
+		                        <i class="lagou_jubao"></i>
+		                        <p>
+		                        <span>违法和不良信息举报</span>
+		                        <span>电话: 4006 2828 35</span>
+		                        <span>邮箱: cc@lagou.com</span>
+		                        </p>
+		                    </div>
+		                </div>
+		                <i class="footer_lagou_icon"></i>
+		            </div>
+		        </div>
+			</footer>
+		
+	</body>
+</html>

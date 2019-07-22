@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.dropbox-section {
+  position: relative;
+  height: 0px;
+}
+.dropbox-section .left-div {
+  border-right: 2px solid #f5f5f5;
+  width: 630px;
+  box-shadow: 2px 0 #f9f9f9;
+  min-height: 658px;
+  margin-left: 180px;
+  margin-top: 60px;
+  position: relative;
+}
+.dropbox-section .left-div .setting-box {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  border-top: 2px solid #f5f5f5;
+  margin: 10px 0 28px;
+  width: 600px;
+}
+.dropbox-section .left-div .setting-box h2 {
+  position: absolute;
+  left: 0;
+  top: -14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+  padding-right: 10px;
+  background-color: #fff;
+  vertical-align: bottom;
+}
+.dropbox-section .left-div .setting-box .setting-btn {
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  top: -12px;
+  margin: 0;
+  padding-left: 10px;
+  background-color: #fff;
+}
+.dropbox-section .left-div .setting-box .setting-btn a {
+  color: #1bb28b;
+  background-color: transparent;
+  text-decoration: none;
+}
+.dropbox-section .left-div .category-tab {
+  margin-bottom: 12px;
+  line-height: 32px;
+  position: relative;
+  top: 46px;
+  left: -20px;
+}
+.dropbox-section .left-div .category-tab ul,
+.dropbox-section .left-div .category-tab ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dropbox-section .left-div .category-tab ul li,
+.dropbox-section .left-div .category-tab ol li {
+  float: left;
+  font-size: 16px;
+  padding: 0px 10px ;
+}
+.dropbox-section .left-div .category-tab ul li span,
+.dropbox-section .left-div .category-tab ol li span {
+  color: #C9C9C9;
+}
+.dropbox-section .left-div .category-tab ul .active,
+.dropbox-section .left-div .category-tab ol .active {
+  color: #00b38a;
+}
+.dropbox-section .like {
+  position: absolute;
+  right: 210px;
+  top: 0px;
+  width: 300px;
+  padding: 0;
+}
+.dropbox-section .like ul.reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid #e9e9e9 ;
+}
+.dropbox-section .like ul.reset li.current {
+  border-bottom: 2px solid #00b38a;
+}
+.dropbox-section .like ul.reset li.current a {
+  position: absolute;
+  padding: 0 10px 0 0;
+  margin-top: -14px;
+  background-color: #fff;
+  font-size: 17px;
+  color: #555;
+  font-weight: 400;
+}
+.dropbox-section .like ul.reset li {
+  padding: 16px 0 13px;
+  display: inline-block;
+}
+.dropbox-section .like ul.reset li a {
+  font-size: 15px;
+  line-height: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+  color: black;
+  font-weight: bold;
+  border-left: 1px solid #d8d8d8;
+}
+.dropbox-section .like .position_detail_content {
+  border-bottom: 1px dashed #e5e5e5;
+  position: relative;
+  width: 300px;
+  height: 80px;
+  vertical-align: top;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_logo {
+  width: 58px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #f2f2f2;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_logo img {
+  display: block;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_pos {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30%;
+  width: 210px;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_pos .tit {
+  font-size: 18px;
+  color: black;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_pos p {
+  color: #e6775c;
+  margin: -2px 0 0 0;
+  padding: 0;
+  font-size: 16px;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_pos .company_name {
+  color: #999999;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_pos .company_name .company_name_span {
+  text-overflow: ellipsis;
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100px;
+  display: block;
+  float: left;
+}
+.dropbox-section .like .position_detail_content .guess_like_list_item_pos .company_name .company_position_span {
+  position: absolute;
+  right: 0;
+  font-size: 10px;
+}
+.dropbox-section .like .similar_position_footer {
+  display: block;
+  color: #555;
+  height: 35px;
+  line-height: 35px;
+  background: #fafafa url(../img/similar_position_triangle_ef2979b.png) no-repeat 220px 10px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  text-align: center;
+}

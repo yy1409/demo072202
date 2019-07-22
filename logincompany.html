@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>拉勾网-公司</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/company.css" />
+	<script type="text/javascript" src="js/jquery-2.2.4.js">
+		
+	</script>
+	<script src="js/vue.js"></script>
+	
+</head>
+<body>
+	 <!--导航条-->
+	 
+			<nav class="public-nav">
+				<div class="c-wrap">
+				<a href="loginindex.html" class="company"><span class="company-logo"></span></a>
+				<span class="address">全国站</span><a href="#" class="city">[切换城市]</a>
+				<ul>
+					<a href="loginindex.html"><li class="li-1">首页</li></a>
+					<a href="loginjob.html"><li>公司</li></a>
+					<a href="#"><li>校园</li></a>
+					<a href="#"><li>言职</li></a>
+				</ul>
+				<div href="#" class="register">
+					<a href="news.html">消息</a>
+					<a href="resume.html">简历</a>
+					<a href="dropbox.html">投递箱</a>
+					<a href="#">收藏夹</a>
+					<a href="#">用户名</a>
+					<span class="register-log"></span>
+				</div>
+				<a href="#" class="app"><span class="app-log"></span>拉勾APP</a>
+				<a href="#" class="version">进入企业版</a>
+				</div>
+			</nav>
+
+			<!-- 什么值得投 -->
+			<section class="company_banner">
+				<h1>什么值得投</h1>
+				<div class="next">
+				</div>
+				<ul class="it_content">
+					<li>
+							<img src="img/company/Cgp3O1dQFiaAelOPAAF1O_dbrx8557.jpg" alt="" />
+						<p>微盟</p>
+						<div class="time">
+							07/02
+							<span class="ic-before">
+							</span>
+							<span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/company/CgotOVxmWR6AHajrAAAPTaxGj4w370.jpg" alt="" />
+						<p>车好多</p>
+						<div class="time">
+							07/01
+							<span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/company/CgqKkVf8uQeAOqJ2AAArfl5skXY149.png" alt="" />
+						<p>有鱼金融科技</p>
+						<div class="time">
+							06/30
+							<span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/company/CgoB5lwHi-2ADLSxAACEBWVZGpw497.png" alt="" />
+						<p>作业帮</p>
+						<div class="time">
+							06/29
+							<span>
+							</span>
+						</div>
+					</li>
+					<li>
+						<img src="img/company/CgotOVvycNiAAe8OAABhrmY_47k309.png" alt="" />
+						<p>贝壳</p>
+						<div class="time">
+							06/28
+							<span>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="content">
+				<div class="c-wrap">
+					<!--筛选-->
+				<ul class="filter">
+						<li><strong>公司地点：</strong>
+							<a href="#" class="active">全国</a>
+							<a href="#">北京</a>
+							<a href="#">上海</a>
+							<a href="#">广州</a>
+							<a href="#">深圳</a>
+							<a href="#">成都</a>
+							<a href="#">南京</a>
+							<a href="#">武汉</a>
+							<a href="#" class="more">更多&nbsp;<i></i></a>
+						</li>
+						<li><strong>融资阶段：</strong>
+							<a href="#" class="active">不限</a>
+							<a href="#">未融资</a>
+							<a href="#">天使轮</a>
+							<a href="#">A轮</a>
+							<a href="#">B轮</a>
+							<a href="#">C轮</a>
+							<a href="#">D轮</a>
+							<a href="#">D轮以上</a>
+						</li>
+						<li><strong>公司规模：</strong>
+							<a href="#" class="active">不限</a>
+							<a href="#">少于15人</a>
+							<a href="#">15-50人</a>
+							<a href="#">50-150人</a>
+							<a href="#">150-500人</a>
+							<a href="#">500-2000人</a>
+							<a href="#">2000人以上</a>
+						</li>
+						<li><strong>行业领域：</strong>
+							<a href="#" class="active">不限</a>
+							<a href="#">移动互联网</a>
+							<a href="#">电商</a>
+							<a href="#">金融</a>
+							<a href="#">企业服务</a>
+							<a href="#">教育</a>
+							<a href="#">文娱</a>
+							<a href="#">游戏</a>
+							<a href="#" class="more">更多&nbsp;<i></i></a>
+						</li>
+					</ul>
+					<!--排序方式-->
+					<ul class="filter">
+						<li><strong>排序方式：</strong>
+							<a href="#" class="active">默认排序</a>
+							<a href="#">职位数量↓</a>
+							<a href="#">面试评价数↓</a>
+							<a href="#">简历处理率↓</a>
+							<span class="check"><i></i>有面试评价</span>
+						</li>
+					</ul>	
+				</div>
+				<!--公司列表-->
+				<div class="company_list">
+					<div class="c-wrap">
+					<ul id="clist">
+						<li class="company_item" v-for="(item,index) in clistArr">
+							<div class="item_top">
+								<img :src="item.imgsrc"/>
+								<p><a href="#">{{item.coporate}}</a></p>
+								<p class="scale">{{item.desc}}</p>
+								<p class="brief">{{item.brief}}</p>
+							</div>
+							<div class="item_bottom">
+								<a href="#">
+									<span>{{item.num1}}</span>
+									<p>面试评价</p>
+								</a>
+								<a href="#" >
+									<span>{{item.num2}}</span>
+									<p>在招职位</p>
+								</a>
+								<a href="#">
+									<span>{{item.num3}}</span>
+									<p>简历处理率</p>
+								</a>
+							</div>
+						</li>
+						
+					</ul>
+					<!--页码-->
+					<div class="page">
+						<page></page>
+					</div>
+					<template id="page">
+						<div class="content">
+							<ul>
+								<li v-show='current != 1' @click='current--'>
+									<a href="#">上一页 </a>
+								</li>
+								<li v-for='index in pages' @clic='goto(index)' >
+									<a href="#" :class="{active:current==index}">{{index}}</a>
+								</li>
+						
+								<li i v-show='allpage != current' @click='current++'>
+									<a href="#">下一页 </a>
+								</li>
+							</ul>
+						</div>
+					</template>
+					</div>
+				</div>
+			</section>
+			<!--回顶部-->
+			<a id="backtop" title="回到顶部" rel="nofollow" ></a>
+			
+			
+			
+			
+			
+			
+			<!--底部-->
+			<footer class="public-footer">
+				<div class="inner_wrapper">
+					<div class="footer_module_column">
+		                <a class="footer_app" href="#" > <i class="footer_app_icon"></i>下载拉勾APP </a>
+		                <a class="footer_mina" href="javascript:;" ><i class="footer_mina_icon"></i> 微信小程序</a>
+		                <div class="footer_module_item">		       
+		                    <a class="footer_wechat" href="#"><i class="footer_wechat_icon"></i> 拉勾微信 </a>
+		                    <a class="footer_webo" href="#"><i class="footer_webo_icon"></i>拉勾微博</a>                            
+		                </div>
+		            </div>
+				
+				<div class="footer_module_right">
+		                <div class="footer_module_business">
+		                    <p class="footer_module_title">企业服务</p>
+		                    <a href="#">招聘抢人宝典</a>
+		                    <a href="#">公司搜索</a>
+		                    <a href="#">拉勾APP</a>
+		                </div>
+		                <div class="footer_module_business">
+		                    <p class="footer_module_title">用户帮助</p>
+		                    <a href="#">帮助中心</a>
+		                    <a href="#">用户服务协议</a>
+		                    <a href="#">隐私政策</a>
+		                    <a href="#">在线提问</a>
+		                </div>
+		                <div class="footer_module_business">
+		                    <p class="footer_module_title">联系方式</p>
+		                    <span class="tel">服务热线：4006 2828 35 (9:00 -18:00)</span> 
+		                    <a class="tel-2" href="#">企业服务邮箱：cc@lagou.com</span> 
+		                    <a href="#" target="_blank">联系我们</a>
+		                </div> 
+                </div>
+                </div>
+                
+                <div class="copyright">
+		            <div class="copyright_main">
+		                <div class="copyright_main_left">
+		                    <span class="copyright_title"><em>&copy;</em>2018 拉勾网</span>
+		                    <a target="_blank">京ICP备14023790号-2</a>
+		                    <a target="_blank" class="footer_gongan"><span class="footer_lagou_gongan"></span>京公网安备 11010802024043号</a>
+		                    <div class="footer_lagou_jubao">
+		                        <i class="lagou_jubao"></i>
+		                        <p>
+		                        <span>违法和不良信息举报</span>
+		                        <span>电话: 4006 2828 35</span>
+		                        <span>邮箱: cc@lagou.com</span>
+		                        </p>
+		                    </div>
+		                </div>
+		                <i class="footer_lagou_icon"></i>
+		            </div>
+		        </div>
+			</footer>
+		
+	</body>
+</html>
+<script src="js/company.js"></script>
